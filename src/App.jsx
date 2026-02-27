@@ -5,7 +5,7 @@ import moviesFromServer from './api/movies.json';
 
 const getPreparedMovies = (movies, query) => {
   const normalizedQuery = query.trim().toLowerCase();
-  let preparedMovies = [...movies];
+  let preparedMovies = movies;
 
   if (query) {
     preparedMovies = preparedMovies.filter(movie => {
